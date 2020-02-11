@@ -1,6 +1,9 @@
 
+The purpose of this program is to help plan dinners (or any meals you need, really) by creating lists of foods you would
+like to make.
+
 TODO list:
-Add functionality to automatically put everything into all.txt
+Improve logic flow through option menu
 Add some more basic modules like shufflePlan, findQuick, etc.
 Eventually migrate to Java to create JavaFX GUI
 

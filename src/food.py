@@ -1,3 +1,8 @@
+"""
+A food object requires a name, a number of leftover nights, cook and prep time, and a list of ingredients
+
+@author C. N. Spencer
+"""
 
 class Food:
 	name = ""
