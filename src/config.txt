@@ -1,3 +1,4 @@
-View list
-Add to list
-Remove from list
+View list:view
+Add to list:add
+Remove from list:remove
+TestList:test

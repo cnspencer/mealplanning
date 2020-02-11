@@ -4,6 +4,7 @@ A food object requires a name, a number of leftover nights, cook and prep time, 
 @author C. N. Spencer
 """
 
+
 class Food:
 	name = ""
 	nights = 0
