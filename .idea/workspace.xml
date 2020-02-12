@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae94bd1c-45f4-4685-8195-59156b9e710d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/add.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/remove.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mealplanning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mealplanning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lists/all.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/add.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/food.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/food.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>effort</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Charizzle\Documents\Python Programs\mealplanning\lists" />
       <recent name="E:\Documents and PowerPoints\School\2019-20 USU\mealplanning\src" />
     </key>
   </component>
@@ -161,64 +153,59 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1044" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581456911662" />
-    <state width="1287" height="281" key="GridCell.Tab.0.bottom" timestamp="1581461808289">
+    <state width="1287" height="281" key="GridCell.Tab.0.bottom" timestamp="1581531149840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581461808289" />
-    <state width="1287" height="281" key="GridCell.Tab.0.center" timestamp="1581461808289">
+    <state width="1287" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581531149840" />
+    <state width="1287" height="281" key="GridCell.Tab.0.center" timestamp="1581531149840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581461808289" />
-    <state width="1287" height="281" key="GridCell.Tab.0.left" timestamp="1581461808288">
+    <state width="1287" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581531149840" />
+    <state width="1287" height="281" key="GridCell.Tab.0.left" timestamp="1581531149840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581461808288" />
-    <state width="1287" height="281" key="GridCell.Tab.0.right" timestamp="1581461808289">
+    <state width="1287" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581531149840" />
+    <state width="1287" height="281" key="GridCell.Tab.0.right" timestamp="1581531149840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581461808289" />
-    <state width="1287" height="344" key="GridCell.Tab.1.bottom" timestamp="1581460423727">
+    <state width="1287" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581531149840" />
+    <state width="1287" height="344" key="GridCell.Tab.1.bottom" timestamp="1581477709735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581460423727" />
-    <state width="1287" height="344" key="GridCell.Tab.1.center" timestamp="1581460423727">
+    <state width="1287" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581477709735" />
+    <state width="1287" height="344" key="GridCell.Tab.1.center" timestamp="1581477709734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581460423727" />
-    <state width="1287" height="344" key="GridCell.Tab.1.left" timestamp="1581460423727">
+    <state width="1287" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581477709734" />
+    <state width="1287" height="344" key="GridCell.Tab.1.left" timestamp="1581477709734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581460423727" />
-    <state width="1287" height="344" key="GridCell.Tab.1.right" timestamp="1581460423727">
+    <state width="1287" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581477709734" />
+    <state width="1287" height="344" key="GridCell.Tab.1.right" timestamp="1581477709735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581460423727" />
+    <state width="1287" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581477709735" />
     <state x="765" y="166" key="SettingsEditor" timestamp="1581455659864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581455659864" />
-    <state x="960" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581460359484">
+    <state x="960" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581528631536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="960" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581460359484" />
+    <state x="960" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581528631536" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>115</line>
+          <line>85</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>126</line>
-          <option name="timeStamp" value="3" />
+          <line>124</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

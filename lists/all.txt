@@ -1,0 +1,3 @@
+<bound method Food.getName of <food.Food object at 0x0000019979B317F0>>:3:5:['Salad Mix', 'Catalina', 'Croutons', 'Chicken', 'Parmesan']
+
+<bound method Food.getName of <food.Food object at 0x0000019979B31730>>:3:5:['Salad Mix', 'Catalina', 'Croutons', 'Chicken', 'Parmesan']

@@ -33,7 +33,7 @@ def main(foodsList):
 	# your function stuff here
 
 
-Developed on a Windows 7 machine
+Developed on a Windows 7 machine, Python v3.7 and 3.8
 @author C. N. Spencer
 Maybe a few rights reserved 2020
 """
@@ -44,7 +44,64 @@ def main():
 	fname = file.name
 	foods = makeFoodList(file, [])
 	file.close()
+	optionMenu(foods)
 
+	# update list file
+	if fname != "all.txt":
+		file = open(fname, "w")
+		file.write(writeToFile(foods))
+		file.flush()
+		file.close()
+
+	# add missing foods to All list
+	alltxt = open("../lists/all.txt", "r")
+	allFoods = makeFoodList(alltxt)
+	alltxt.close()
+	for foo in foods:
+		if foo not in allFoods:
+			allFoods.append(foo)
+	alltxt = open("../lists/all.txt", "w")
+	alltxt.write(writeToFile(allFoods))
+	alltxt.flush()
+	alltxt.close()
+
+
+# returns the read-only file (if pre-existing) or newly created file of the list the user picks
+def mainMenu():
+	get = True
+	# This is the main menu
+
+	while get:
+		print("Select list (any other key to create new): ")
+		count = 1
+		lists = []
+		for f in os.listdir("../lists"):
+			if f.endswith(".txt"):
+				print(f"{count}. {f.replace('.txt', '').title()}")
+				count += 1
+				lists.append(f)
+		listChoice = input()
+		if listChoice.isdigit():
+			if int(listChoice) < count:
+				fname = lists[int(listChoice) - 1]
+				return open("../lists/" + fname, "r")
+			else:
+				newChoice = input("Not valid. Create new list?\n")
+				if newChoice.capitalize() == "Y" or newChoice.capitalize() == "YES":
+					newList = input("Enter list name: ")
+					return open(f"../lists/{newList}.txt", "w+")
+				else:
+					get = True
+		else:
+			newChoice = input("Not valid. Create new list (y/n)?\n")
+			if newChoice.capitalize() == "Y" or newChoice.capitalize() == "YES":
+				newList = input("Enter list name: ")
+				return open(f"../lists/{newList}.txt", "w+")
+			else:
+				get = True
+
+
+def optionMenu(foods):
 	# This is the option menu
 	get = True
 	newOption = None
@@ -65,8 +122,8 @@ def main():
 		option = input()
 		if option.isdigit():
 			if int(option) < count:
-				option = options[int(option)].rsplit(":")[1]
-				mod = importlib.import_module(option)  # imports and executes your module option
+				opMod = options[int(option) - 1].rsplit(":")[1]
+				mod = importlib.import_module(opMod)  # imports and executes your module option
 				mod.main(foods)
 			elif int(option) == count:  # exit
 				get = False
@@ -78,63 +135,9 @@ def main():
 		f.close()
 		if newOption is not None:
 			f = open("config.txt", "a")
-			f.write(f"\n{newOption}:{module}")    # save the new option
+			f.write(f"\n{newOption}:{module}")  # save the new option
 			f.flush()
 			f.close()
-
-		# update list file
-		if fname != "all.txt":
-			file = open("../" + fname, "w")
-			file.write(writeToFile(foods))
-			file.flush()
-			file.close()
-
-		# add missing foods to All list
-		alltxt = open("../all.txt", "r")
-		allFoods = makeFoodList(alltxt)
-		alltxt.close()
-		for foo in foods:
-			if foo not in allFoods:
-				allFoods.append(foo)
-		alltxt = open("../all.txt", "w")
-		alltxt.write(writeToFile(allFoods))
-		alltxt.flush()
-		alltxt.close()
-
-
-# returns the read-only file (if pre-existing) or newly created file of the list the user picks
-def mainMenu():
-	get = True
-	# This is the main menu
-
-	while get:
-		print("Select list (any other key to create new): ")
-		count = 1
-		lists = []
-		for f in os.listdir(".."):
-			if f.endswith(".txt"):
-				print(f"{count}. {f.replace('.txt', '').title()}")
-				count += 1
-				lists.append(f)
-		listChoice = input()
-		if listChoice.isdigit():
-			if int(listChoice) < count:
-				fname = lists[int(listChoice) - 1]
-				return open("../" + fname, "r")
-			else:
-				newChoice = input("Not valid. Create new list?\n")
-				if newChoice.capitalize() == "Y" or newChoice.capitalize() == "YES":
-					newList = input("Enter list name: ")
-					return open(f"../{newList}.txt", "w+")
-				else:
-					get = True
-		else:
-			newChoice = input("Not valid. Create new list (y/n)?\n")
-			if newChoice.capitalize() == "Y" or newChoice.capitalize() == "YES":
-				newList = input("Enter list name: ")
-				return open(f"../{newList}.txt", "w+")
-			else:
-				get = True
 
 
 def makeFoodList(file, ls=[]):

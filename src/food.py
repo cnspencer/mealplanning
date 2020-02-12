@@ -18,10 +18,7 @@ class Food:
 		self.ingredients = ingredients
 
 	def __str__(self):
-		return f"{self.name}:" \
-			f"Makes {self.nights} dinners" \
-			f"Takes {self.time} minutes" \
-			f"Uses: {self.ingredients.remove('[', '').remove(']', '')}"
+		return str(self.name) + ":\nMakes " + str(self.nights) + " leftover nights\nTakes " + str(self.time) + " minutes to make\nUses " + str(self.ingredients).replace('[', '').replace(']', '')
 
 	def getName(self):
 		return self.name
