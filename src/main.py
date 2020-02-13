@@ -70,7 +70,6 @@ def main():
 def mainMenu():
 	get = True
 	# This is the main menu
-
 	while get:
 		print("Select list (any other key to create new): ")
 		count = 1
@@ -140,7 +139,9 @@ def optionMenu(foods):
 			f.close()
 
 
-def makeFoodList(file, ls=[]):
+def makeFoodList(file, ls=None):
+	if ls is None:
+		ls = []
 	for line in file:
 		if line is not None:
 			line = line.rsplit(":")
@@ -151,7 +152,7 @@ def makeFoodList(file, ls=[]):
 def writeToFile(ls):
 	st = ""
 	for foo in ls:
-		st = st + f"{foo.getName}:{foo.getNights()}:{foo.getTime()}:{foo.getIngredients()}\n"
+		st = st + f"{foo.getName()}:{foo.getNights()}:{foo.getTime()}:{foo.getIngredients()}\n"
 	return st
 
 
