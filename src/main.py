@@ -33,7 +33,7 @@ def main(foodsList):
 	# your function stuff here
 
 
-Developed on a Windows 7 machine, Python v3.7 and 3.8
+Developed on Windows 7/10 machines, Pythons v3.7 and 3.8
 @author C. N. Spencer
 Maybe a few rights reserved 2020
 """
