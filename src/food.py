@@ -12,6 +12,7 @@ class Food:
 	ingredients = []
 
 	def __init__(self, name, nights=0, time=0, ingredients=[]):
+		# TODO: put member variables into a file to allow for new data fields
 		self.name = name
 		self.nights = nights
 		self.time = time

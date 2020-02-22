@@ -21,6 +21,8 @@ Mealplanning, though designed to be a modular program for easy community modding
 # TODO list:
 Add some more basic modules like shufflePlan, findQuick, etc.
 
+Refactor food.py to allow for new data fields (see TODO in food.py)
+
 Eventually migrate to Java to create JavaFX GUI
 
 # Future Mods:

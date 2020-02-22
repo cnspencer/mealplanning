@@ -122,8 +122,12 @@ def optionMenu(foods):
 		if option.isdigit():
 			if int(option) < count:
 				opMod = options[int(option) - 1].rsplit(":")[1]
-				mod = importlib.import_module(opMod)  # imports and executes your module option
-				mod.main(foods)
+				try:
+					mod = importlib.import_module(opMod)  # imports and executes your module option
+					mod.main(foods)
+				except ModuleNotFoundError:
+					print("Error: No module was found at " + opMod + " for option " + option)
+					print("See if src/config.txt is correctly configured (ex. \"My Option:mymod\")")
 			elif int(option) == count:  # exit
 				get = False
 		else:
