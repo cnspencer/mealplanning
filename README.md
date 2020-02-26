@@ -19,11 +19,16 @@ Mealplanning, though designed to be a modular program for easy community modding
 	* Removes a specified food from the current list
 
 # TODO list:
-Add some more basic modules like shufflePlan, findQuick, etc.
+BUG: Fix counter when food removed (i.e. reset after removal/before reprint)
 
-Refactor food.py to allow for new data fields (see TODO in food.py)
+FUNCTIONALITY: Add some more basic modules like shufflePlan, findQuick, etc.
 
-Eventually migrate to Java to create JavaFX GUI
+DESIGN: Renovate main.py for better flow, so that a list isn't the first thing you need to select - some mods won't need a specific list
+
+DESIGN: ~~Refactor food.py to allow for new data fields (like calories, servings, etc.)~~
+/Check out dynamic setting of attributes
+
+DESIGN: Eventually migrate to Java to create JavaFX GUI
 
 # Future Mods:
 shufflePlan: takes the list and plans out your meals randomly

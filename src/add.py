@@ -18,7 +18,7 @@ def main(ls):
 				name = input("New food name: ")
 				nights = input("Leftover nights: ")
 				time = input("Prep+Cook time: ")
-				ingredients = input("List of ingredients (\",\" regex): ").rsplit(", ")
+				ingredients = input("List of ingredients (separate items with \",[SPACE]\"): ").rsplit(", ")
 				ls.append(food.Food(name, nights, time, ingredients))
 				print(f"{name.title()} added")
 			elif int(op) == 2:

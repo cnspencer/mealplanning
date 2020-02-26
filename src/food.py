@@ -1,5 +1,6 @@
 """
 A food object requires a name, a number of leftover nights, cook and prep time, and a list of ingredients
+Additional object data fields can be added dynamically within mods as long as these four are first in order when saved to the list file
 
 @author C. N. Spencer
 """
@@ -11,12 +12,14 @@ class Food:
 	time = 0
 	ingredients = []
 
-	def __init__(self, name, nights=0, time=0, ingredients=[]):
-		# TODO: put member variables into a file to allow for new data fields
+	def __init__(self, name, nights=0, time=0, ingredients=None):
 		self.name = name
 		self.nights = nights
 		self.time = time
-		self.ingredients = ingredients
+		if ingredients is not None:
+			self.ingredients = ingredients
+		else:
+			self.ingredients = []
 
 	def __str__(self):
 		return str(self.name) + ":\nMakes " + str(self.nights) + " leftover nights\nTakes " + str(self.time) + " minutes to make\nUses " + str(self.ingredients).replace('[', '').replace(']', '')
