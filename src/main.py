@@ -1,15 +1,16 @@
 
 import os
-import food
 import importlib
+import food
+from mods import *
 
 """
-This is the base module for a meal planning program.
-It is designed to be easily modded by adding your own modules into /src
-To create your own module, create a main function that takes a list as an argument. You will probably have to import food
-as well. This is the list that the main menu here asks you to pick. You can add it to the options menu by inputting an
+This is the base module for the mealplanning program.
+It is designed to be easily modded by adding your own modules into the mods directory.
+To create your own module, create a main function that takes a list as an argument. (You may have to import the food
+module.) This is the list that the main menu here asks you to pick. You can add it to the options menu by inputting an
 option not already listed. It will prompt you for a short name for the new option, then where it can find your module
-from the src/ directory. See the provided modules (view, add, remove) for example.
+from the mods/ directory. See the provided modules (view, add, remove) for example.
 i.e.
 >Select list: 
 >1. list1
@@ -134,7 +135,7 @@ def optionMenu(foods):
 			optionMake = input("Not valid. Create new option?\n")
 			if optionMake.capitalize() == "Y" or optionMake.capitalize() == "YES":
 				newOption = input("Enter option: ")
-				module = input("Reference module (path from src/): ").replace(".py", "").replace("/", ".").replace("\\", ".")
+				module = input("Reference module (path from mods/): ").replace(".py", "").replace("/", ".").replace("\\", ".")
 		f.close()
 		if newOption is not None:
 			f = open("config.txt", "a")

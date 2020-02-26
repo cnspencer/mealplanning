@@ -4,8 +4,8 @@ import food
 
 def main(ls):
 	get = True
-	count = 1
 	while get:
+		count = 1
 		for foo in ls:
 			print(f"{count}. {foo}")
 			count += 1

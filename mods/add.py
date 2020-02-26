@@ -58,7 +58,9 @@ def main(ls):
 			print("Invalid input")
 
 
-def makeFoodList(file, ls=[]):
+def makeFoodList(file, ls=None):
+	if ls is None:
+		ls = []
 	for line in file:
 		if line is not None:
 			line = line.rsplit(":")
